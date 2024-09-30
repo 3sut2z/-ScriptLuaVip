@@ -1,5 +1,4 @@
---!native
---!optimize 2
+--! ScriptLuaVip
 
 if not ExecutorSupport then print("[mspaint] Loading stopped, please use the official loadstring for mspaint. (ERROR: ExecutorSupport == nil)") return end
 if getgenv().mspaint_loaded then print("[mspaint] Loading stopped. (ERROR: Already loaded)") return end
@@ -320,7 +319,7 @@ local Toggles = getgenv().Linoria.Toggles
 local ESPLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/MS-ESP/refs/heads/main/source.lua"))()
 
 local Window = Library:CreateWindow({
-	Title = "mspaint v2",
+	Title = "! ScriptLuaVip v1",
 	Center = true,
 	AutoShow = true,
 	Resizable = true,
@@ -5329,10 +5328,10 @@ MenuGroup:AddDivider()
 MenuGroup:AddLabel("Menu bind"):AddKeyPicker("MenuKeybind", { Default = "RightShift", NoUI = true, Text = "Menu keybind" })
 MenuGroup:AddButton("Join Discord Server", function()
     local Inviter = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
-	Inviter.Join("https://discord.com/invite/cfyMptntHr")
+	Inviter.Join("https://discord.gg/invite/tm6auWdCt6")
 	Inviter.Prompt({
-		name = "mspaint",
-		invite = "https://discord.com/invite/cfyMptntHr",
+		name = "! Me",
+		invite = "https://discord.gg/invite/tm6auWdCt6",
 	})
 end)
 MenuGroup:AddButton("Unload", function() Library:Unload() end)
